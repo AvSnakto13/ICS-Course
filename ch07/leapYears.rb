@@ -2,7 +2,7 @@ puts 'That\'s right folks, ever confused about when them darn leap years come ar
 startn = gets.chomp
 puts 'an\' an endin\' year'
 endn = gets.chomp
-puts 'an\' now I\'ll tell yah every leap year between \'em, whoo, you might wanna sidown, this here could take a spell'
+puts 'an\' now I\'ll tell yah every leap year between \'em, even including \'em if th\'y are one, ha-hulh. Whoo, you might wanna sidown, this here could take a spell'
 while true
 	if (startn.to_i)%4 != 0
 		startn = startn.to_i + 1
@@ -18,7 +18,7 @@ while true
 		puts startn.to_s + ', '
 		startn = startn.to_i + 4
 	end
-	if (startn.to_i >= endn.to_i)
+	if (startn.to_i > endn.to_i)
 		break
 	end
 end
